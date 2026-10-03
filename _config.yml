@@ -1,15 +1,11 @@
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# this file, please edit the items marked below with ***TO CHANGE*** and review
-# the rest.
+# which you are expected to set up once and rarely edit after that.
 
 # Setup
-# From site setting
 # ***TO CHANGE***
 title: "Junteng Liu"
-#logo: "/assets/images/..."
 subtitle:
 email: jliugi@connect.ust.hk
 description: >-
@@ -25,55 +21,28 @@ twitter_username: junteng88716710
 #***TO CHANGE***
 github_username: Vicent0205
 
-# __   __        __  _
-# \ \ / / __ _ _/ /_(_)__ ______
-#  \ V // _`/ __/ __/ / _'/ __/
-#   \_/ \__,_/\__/_/\__,_/_/
-#
-# This makes the website use CSS for form inputs and adds bootstrap
-# make sure you do not have a file named _sass/custom/custom.scss
-# as that file will be used instead of this one.
-
-# Add your information here
-#
-# This information is used by the site to display information
-# in the sidebar, on the home page, and in meta tags for SEO
+# The information below is used by the site to display the author profile
+# (sidebar), the home page, and meta tags for SEO.
 # ***TO CHANGE***
 author:
   name: "Junteng Liu"
-  # avatar: "/assets/images/..."
   bio: "First-year PhD candidate at the HKUST NLP Group. Research focuses on natural language processing and machine learning."
-  # location: "..."
   email: jliugi@connect.ust.hk
-  # phone: "123-456-7890"
   googlescholar: "https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate"
-  # orcid: "..."
-  # wikipedia: "..."
   twitter: "junteng88716710"
-  # bluesky: "..."
   github: "Vicent0205"
-  # linkedin: "..."
-  # youtube: "..."
-  # instagram: "..."
-  # medium: "..."
 
-# There are also different ways to share on social media
+# Social media / sharing
 # ***TO CHANGE***
 twitter:
   username: "junteng88716710"
-  # the company/website twitter handle
-  # twitter: "@..."
-  # creator: "junteng88716710"
+
+# GitHub repository hosting this site (used for repository links / buttons).
 github:
-  # this is used for the github buttons
   username: "chingkoya99"
-  # this is the repository name
   repository: "LJT-Homepage"
 
-# This sets the category for the publications
-#
-# This makes the website group publications by category. You can
-# remove this to just list them all in one group.
+# Group publications by category on the publications page.
 publication_category:
   conferences:
     title: "Conferences"
@@ -85,10 +54,6 @@ publication_category:
     title: "Preprints"
 
 # Collections
-#
-# Only some of the collections are used at the same time (due to the
-# fact that pagination is not supported in nested folders), but
-# everything else works fine.
 collections:
   posts:
     output: true
@@ -105,10 +70,7 @@ collections:
     output: true
     permalink: /:collection/:name
 
-# This sets the layout defaults
-#
-# This makes sure that the right layout is used for the right
-# type of content. You should not need to change this.
+# Default layouts for each content type
 defaults:
   - scope:
       path: ""
@@ -164,39 +126,11 @@ defaults:
 
 # Build settings
 markdown: kramdown
-# highlighter: rouge
-# highlighter: pygments
 highlighter: rouge
-
-# This allows the use of MathJax for math equations
-#
-# If you are not using MathJax, you can set this to false
 mathjax: true
-
-# This sets the markdown converter
-#
-# You can change this to another markdown converter if you would like,
-# but kramdown is the default and is supported by the theme.
-# markdown: kramdown
-
-# This sets the syntax highlighter
-#
-# Rouge is the default and is supported by the theme.
-# highlighter: rouge
-
-# This sets the time zone
-#
-# If you are not in the United States, you can change this to your
-# time zone. The default is UTC.
 timezone: UTC
-
-# This sets the encoding
 encoding: utf-8
 
-# This sets the plugins
-#
-# The plugins are used for the feed, sitemap, gist, seo, and
-# pagination. You should not need to change this.
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -205,166 +139,21 @@ plugins:
   - jekyll-include-cache
   - jekyll-paginate
 
-# This sets the pagination
-#
-# If you are not using pagination, you can set this to false
+# Blog / pagination settings
 paginate: 5
 paginate_path: /blog/page:num
-
-# This sets the permalink for posts
-#
-# The default is /blog/:year/:month/:day/:title/
 permalink: /blog/:year/:month/:day/:title/
-
-# This sets the default excerpt separator
 excerpt_separator: "\n\n"
 
-# This sets the base url for the site
-#
-# The base url is used for the links in the feed and sitemap.
-# If you are using a custom domain, you can set this to the
-# domain name.
-baseurl: "/LJT-Homepage"
+# Other build flags
+future: true
+lsi: false
+safe: false
+incremental: false
 
-# This sets the url for the site
-#
-# The url is used for the links in the feed and sitemap.
-# If you are using a custom domain, you can set this to the
-# domain name.
-url: "https://chingkoya99.github.io"
+include:
+  - _pages
 
-# This sets the title for the site
-#
-# The title is used for the links in the feed and sitemap.
-# If you are using a custom domain, you can set this to the
-# domain name.
-title: "Junteng Liu"
-
-# This sets the description for the site
-#
-# The description is used for the links in the feed and sitemap.
-# If you are using a custom domain, you can set this to the
-# domain name.
-description: >-
-  Junteng Liu's homepage. First-year PhD candidate at the HKUST NLP Group.
-  Research focuses on natural language processing and machine learning,
-  including LLM reasoning and reinforcement learning, hallucination in
-  vision-language models, and LLM truthfulness and interpretability.
-
-# This sets the author for the site
-#
-# The author is used for the links in the feed and sitemap.
-author:
-  name: "Junteng Liu"
-  email: jliugi@connect.ust.hk
-
-# This sets the social media for the site
-#
-# The social media is used for the links in the feed and sitemap.
-social:
-  name: "Junteng Liu"
-  links:
-    - https://github.com/Vicent0205
-    - https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate
-
-# This sets the logo for the site
-#
-# The logo is used for the links in the feed and sitemap.
-# logo: "/assets/images/..."
-
-# This sets the favicon for the site
-#
-# The favicon is used for the links in the feed and sitemap.
-# favicon: "/assets/images/favicon.ico"
-
-# This sets the default image for the site
-#
-# The default image is used for the links in the feed and sitemap.
-# default_image: "/assets/images/..."
-
-# This sets the open graph for the site
-#
-# The open graph is used for the links in the feed and sitemap.
-# open_graph: true
-
-# This sets the twitter for the site
-#
-# The twitter is used for the links in the feed and sitemap.
-# twitter:
-#   username: "..."
-
-# This sets the facebook for the site
-#
-# The facebook is used for the links in the feed and sitemap.
-# facebook:
-#   username: "..."
-#   app_id: "..."
-
-# This sets the google analytics for the site
-#
-# The google analytics is used for the links in the feed and sitemap.
-# google_analytics: "..."
-
-# This sets the disqus for the site
-#
-# The disqus is used for the links in the feed and sitemap.
-# disqus: "..."
-
-# This sets the discourse for the site
-#
-# The discourse is used for the links in the feed and sitemap.
-# discourse: "..."
-
-# This sets the livere for the site
-#
-# The livere is used for the links in the feed and sitemap.
-# livere: "..."
-
-# This sets the staticman for the site
-#
-# The staticman is used for the links in the feed and sitemap.
-# staticman: "..."
-
-# This sets the mailchimp for the site
-#
-# The mailchimp is used for the links in the feed and sitemap.
-# mailchimp: "..."
-
-# This sets the formspree for the site
-#
-# The formspree is used for the links in the feed and sitemap.
-# formspree: "..."
-
-# This sets the custom_analytics for the site
-#
-# The custom_analytics is used for the links in the feed and sitemap.
-# custom_analytics: "..."
-
-# This sets the comments for the site
-#
-# The comments are used for the links in the feed and sitemap.
-comments:
-  provider: ""
-  # disqus: ...
-  # discourse: ...
-  # livere: ...
-  # staticman: ...
-  # mailchimp: ...
-  # formspree: ...
-
-# This sets the defaults for the site
-#
-# The defaults are used for the links in the feed and sitemap.
-# defaults: ...
-
-# This sets the plugins for the site
-#
-# The plugins are used for the links in the feed and sitemap.
-# plugins: ...
-
-# This sets the exclude for the site
-#
-# The exclude is used for the links in the feed and sitemap.
 exclude:
   - .sass-cache
   - .jekyll-cache
@@ -382,98 +171,6 @@ exclude:
   - Makefile
   - Rakefile
 
-# This sets the include for the site
-#
-# The include is used for the links in the feed and sitemap.
-include:
-  - _pages
-
-# This sets the keep_files for the site
-#
-# The keep_files is used for the links in the feed and sitemap.
 keep_files:
   - .git
   - .svn
-
-# This sets the encoding for the site
-#
-# The encoding is used for the links in the feed and sitemap.
-# encoding: utf-8
-
-# This sets the markdown for the site
-#
-# The markdown is used for the links in the feed and sitemap.
-# markdown: kramdown
-
-# This sets the highlighter for the site
-#
-# The highlighter is used for the links in the feed and sitemap.
-# highlighter: rouge
-
-# This sets the time for the site
-#
-# The time is used for the links in the feed and sitemap.
-# timezone: UTC
-
-# This sets the future for the site
-#
-# The future is used for the links in the feed and sitemap.
-future: true
-
-# This sets the lsi for the site
-#
-# The lsi is used for the links in the feed and sitemap.
-lsi: false
-
-# This sets the safe for the site
-#
-# The safe is used for the links in the feed and sitemap.
-safe: false
-
-# This sets the incremental for the site
-#
-# The incremental is used for the links in the feed and sitemap.
-incremental: false
-
-# This sets the detach for the site
-#
-# The detach is used for the links in the feed and sitemap.
-detach: false
-
-# This sets the watching for the site
-#
-# The watching is used for the links in the feed and sitemap.
-watch:
-  ignore:
-    - node_modules
-    - vendor
-
-# This sets the livereload for the site
-#
-# The livereload is used for the links in the feed and sitemap.
-livereload: false
-
-# This sets the open for the site
-#
-# The open is used for the links in the feed and sitemap.
-open: false
-
-# This sets the quiet for the site
-#
-# The quiet is used for the links in the feed and sitemap.
-quiet: false
-
-# This sets the verbose for the site
-#
-# The verbose is used for the links in the feed and sitemap.
-verbose: false
-
-# This sets the default for the site
-#
-# The default is used for the links in the feed and sitemap.
-# defaults: ...
-
-# This sets the jekyll for the site
-#
-# The jekyll is used for the links in the feed and sitemap.
-jekyll: 4
